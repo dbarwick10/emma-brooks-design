@@ -94,6 +94,18 @@ body {
     flex: 1;
 }
 
+.portrait {
+    width: 90%; 
+    margin: 0 auto;  
+}
+
+.portrait img {
+    width: 100%;  
+    height: auto;  
+    display: block;  
+}
+
+
 /* index.html stop */
 /* about.html start */
 
