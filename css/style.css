@@ -7,6 +7,7 @@ header {
     background-color: white;
     z-index: 1000;
     margin-left: calc(-50vw + 50%);
+    border-bottom: .01px solid #ebebeb;
 }
 
 body {
@@ -29,7 +30,6 @@ body {
     gap: 30px; 
     padding: 10px 0;
     justify-content: flex-end;
-
 }
 
 .eb-logo {
@@ -54,6 +54,15 @@ body {
     text-decoration: none;
     white-space: nowrap;
     padding: 0 15px; 
+}
+
+.header-links.active {
+    color: #000; /* darker color */
+    font-weight: 700; /* slightly bolder */
+    /* Optional: add an underline */
+    border-bottom: 2px solid #000;
+    /* Or use a background color */
+    /* background-color: #f5f5f5; */
 }
 
 .banner-holder {
@@ -179,7 +188,7 @@ hr {
     height: 1px;
     background-color: lightgray;
     width: 90%;
-    margin: 20px auto 40px auto; /* This centers it horizontally while keeping your vertical margins */
+    margin: 40px auto 40px auto; /* This centers it horizontally while keeping your vertical margins */
 }
 
 
@@ -242,6 +251,49 @@ hr {
 }
 
 /* about.html stop */
+/* resume.html start */
+
+ul.no-bullets {
+    column-count: 2;      
+    column-gap: 100px;     
+}
+
+ul.no-bullets li {
+    margin-bottom: 10px;  
+    break-inside: avoid;  
+    list-style-type: none;
+}
+
+.recommendations {
+    display: flex;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.recommendations-left {
+    flex: 1; /* Takes up half the space */
+    display: flex;
+    flex-direction: column;
+    gap: -40px;
+}
+
+.recommendations-right {
+    flex: 1; /* Takes up half the space */
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.awards > div {
+    flex: 1;
+    text-align: left;
+}
+
+/* resume.html stop */
 
 footer {
     padding: 40px 0;
